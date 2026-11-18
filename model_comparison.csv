@@ -1,0 +1,5 @@
+Model,MAE,RMSE,R2 (test),R2 (5-fold CV)
+Baseline (mean),25.268,29.101,-0.0,-0.001
+Ridge regression,25.337,29.172,-0.005,-0.003
+Random Forest,25.344,29.227,-0.009,-0.01
+XGBoost,25.496,29.417,-0.022,-0.018

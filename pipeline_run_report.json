@@ -1,0 +1,66 @@
+{
+ "run_at": "2026-11-13T16:55:24",
+ "duration_s": 25.6,
+ "data_quality": {
+  "rows": 12600,
+  "columns": 21,
+  "duplicates": 600,
+  "missing_pct": {
+   "Athlete_ID": 5.0,
+   "Athlete_Name": 5.0,
+   "Sport_Type": 5.0,
+   "Event": 5.1,
+   "Training_Hours_per_Week": 5.0,
+   "Average_Heart_Rate": 5.0,
+   "BMI": 5.0,
+   "Sleep_Hours_per_Night": 5.0,
+   "Daily_Caloric_Intake": 5.1,
+   "Hydration_Level": 5.1,
+   "Injury_History": 37.4,
+   "Previous_Competition_Performance": 5.0,
+   "Training_Intensity": 5.1,
+   "Resting_Heart_Rate": 5.0,
+   "Body_Fat_Percentage": 5.0,
+   "VO2_Max": 5.0,
+   "Event_Distance": 5.0,
+   "Altitude_Training": 28.8,
+   "Mental_Focus_Level": 5.0,
+   "Competition_Date": 5.0,
+   "Performance_Metric": 4.9
+  }
+ },
+ "clean_rows": 11400,
+ "model_selected": "Ridge regression",
+ "model_comparison": {
+  "Baseline (mean)": {
+   "MAE": 25.268,
+   "RMSE": 29.101,
+   "R2 (test)": -0.0,
+   "R2 (5-fold CV)": -0.001
+  },
+  "Ridge regression": {
+   "MAE": 25.337,
+   "RMSE": 29.172,
+   "R2 (test)": -0.005,
+   "R2 (5-fold CV)": -0.003
+  },
+  "Random Forest": {
+   "MAE": 25.344,
+   "RMSE": 29.227,
+   "R2 (test)": -0.009,
+   "R2 (5-fold CV)": -0.01
+  },
+  "XGBoost": {
+   "MAE": 25.496,
+   "RMSE": 29.417,
+   "R2 (test)": -0.022,
+   "R2 (5-fold CV)": -0.018
+  }
+ },
+ "recommendation_share_pct": {
+  "Increase load": 10.2,
+  "Maintain load": 53.8,
+  "Reduce load": 28.4,
+  "Rest & medical check": 7.6
+ }
+}
